@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <form id="info">
+                Name :<br>
+             <input type="text" name="name" required><br><br>
+             Enter Marks:<br>
+             Maths:
+             <input type="number" max="100" min="1" name="maths" required><br><br>
+             English:
+             <input type="number" max="100" min="1" name="english" required><br><br>
+             Passing Year: <br>
+             <input type="number" max="2020" min="2000" name="passingYear" required><br><br>
+             <input type="submit" value="Submit" onclick=" return addStudent()">
+
+            </form>
+        </div>
+        <hr>
+        <h4>Students Information</h4>
+        <table id="data" border="1">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>maths</th>
+                    <th>English</th>
+                    <th>Average</th>
+                    <th>passing year</th>
+                    <th>Creation Time</th>
+                </tr>
+            </thead>
+            <!-- <tbody id="data">
+                
+            </tbody> -->
+        </table>
+
+        <script src="averageMarks.js"></script>
+    </body>
+</html>
