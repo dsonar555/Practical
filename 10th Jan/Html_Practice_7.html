@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url("Html_Practice_7.css");
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="Success.html" method="post">
+                <fieldset>
+                    <legend>Your Address</legend>
+                    <div class="label-div">
+                        <label>First Name</label><br><br>
+                        <label>Last Name</label><br><br>
+                        <label>Street</label><br><br>
+                        <label>City</label><br><br>
+                    </div>
+                    
+                    <div class="input-div">
+                        <input type ="text" name="firstName" ><br><br>
+                        <input type ="text" name="lastName" ><br><br>
+                        <input type ="text" name="street" ><br><br>
+                        <input type ="text" name="city" ><br><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <div class="label-div">
+                        <label>Biogaphy</label><br><br><br>
+                        <label>Image</label><br><br>
+                        <label>Age Group</label><br><br>
+
+                    </div>
+                    <div class="input-div">
+                        <textarea name="boigraphy"></textarea><br><br>
+                    
+                        <input type="file" name="image"><br><br>
+                   
+                        <select name="ageGroup">
+                            <option value="0to9">0 to 9 years</option>
+                            <option value="0to9">10 to 18 years</option>
+                            <option value="0to9">19 to 27 years</option>
+                            <option value="0to9">28 to 36 years</option>
+                            <option value="0to9">37 to 45 years</option>
+                            <option value="0to9">46 to 54 years</option>
+                        </select><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Interests</legend>
+                    <div class="label-div">
+                        <label>Hobbies</label><br><br><br><br><br>
+                        <label>Favourite Car?</label><br><br>
+                        <label>Favourite public transport?</label><br><br>
+                    </div>
+
+                    <div class="input-div">
+                        <select name="hobbies" size="4">
+                            <option value="Playing Soccer">Playing Soccer</option>
+                            <option value="Gardening">Gardening</option>
+                            <option value="Listening Music">Listening Music</option>
+                            <option value="Watching Movies">Watching Movies</option>
+                        </select><br><br>
+                       
+                        <select name="cars">
+                            <option value="XUV 500">XUV 500</option>
+                            <option value="Scorpio">Scorpio</option>
+                            <option value="Inova">Inova</option>
+                            <option value="Fortuner">Fortuner</option>
+                            <option value="i20">i20</option>
+                        </select><br><br>
+                        
+                        <select name="publicTransport" size="4">
+                            <optgroup label="Ground">
+                                <option value="Train">Train</option>
+                                <option value="Bus">Bus</option>
+                            </optgroup>
+                            <optgroup label="Water">
+    
+                            </optgroup>
+                        </select><br><br>
+                    </div>
+                </fieldset>
+                <div class="button-div"> 
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
