@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url("Html_Practice_8.css");
+        </style>
+    </head>
+    <body>
+        <div class="main-div">
+            <form action="information.html" method="POST" id="formId">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="label-div">
+                        <label>First Name</label><br><br>
+                        <label>Last Name</label><br><br>
+                        <label>Date Of Birth</label><br><br>
+                        <label>Gender</label><br><br>
+                    </div>
+                    <div class="input-div">
+                        <input type ="text" name="firstName" required><br><br>
+                        <input type ="text" name="lastName" required><br><br>
+                    <select name="month" required>
+                            <option hidden>Month</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                    </select>
+                    <select name="day" required>
+                            <option hidden>Day</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                    </select>
+                    <select name="year" required>
+                            <option hidden>Year</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                    </select><br><br>
+                        <select name="gender" required>
+                            <option hidden>Choose gender</option>
+                            <option value="male">Male</option>
+                            <option vlaue="female">Female</option>
+                            <option value="others">Others</option>
+                        </select><br><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <div class="label-div">
+                        <label>Email</label><br><br><br>
+                        <labe>Re-type Email</labe><br><br>
+                        <label>Password</label><br><br><br>
+                        <label>Re-type Password</label><br><br>
+                        <label>Security Questions</label><br><br>
+                        <label>Security Answer</label><br><br>
+                    </div>
+                    <div class="input-div">
+                        <input type="email" name="email" required><br>
+                        (Your email address will be your username)<br><br>
+                        <input type="email" name="re-typeEmail" required><br><br>
+                        <input type="password" name="password" required><br>
+                        (Min 8 characters, 1 Number,case-sensitive)<br><br>
+                        <input type="password" name="re-typePasssword" required><br><br>
+                        <select name="securityQuestions">
+                            <option hidden>Choose a questions</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select><br><br>
+                        <input type="text" name="answers"><br>
+                        (No case-sensitive)<br><br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="label-div">
+                        <label>Address</label><br><br>
+                        <label>City</label><br><br>
+                        <label>State</label><br><br>
+                        <label>Zip Code</label><br><br>
+                        <label>Phone No.</label>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" name="address"><br><br>
+                        <input type="text" name="city"><br><br>
+                        <select name="state">
+                            <option hidden>State</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Gujrat">Gujrat</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Punjab">Punjab</option>
+                        </select><br><br>
+                        <input type="text" name="zipcode" size="6"> <input type="text" value="Optional" size="6" disabled><br><br>
+                        <input type="tel" name="phoneNo">
+                        <select name="type">
+                            <option value="mobile">Mobile</option>
+                            <option value="telephone">Telephone</option>
+                        </select><br>
+                        No spaces or dashes
+                    </div>
+                </fieldset>
+                <div class="button-div"> 
+                    <input type="submit" value="Submit" id="submit-btn">
+                    <input type="reset" value="Reset">
+                </div><br><br>
+            </form>
+        </div>
+        <script src="Html_Practice_8.js"></script>
+    </body>
+</html>
